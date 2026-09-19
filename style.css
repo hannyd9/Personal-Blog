@@ -268,3 +268,38 @@ footer {
 
     font-size: 12px;
 }
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.modal {
+    position: fixed;
+    inset: 0;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.88);
+    z-index: 2000;
+    padding: 30px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: min(950px, 90vw);
+    min-height: 500px;
+    background: #f2f2f2;
+    color: #111;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
