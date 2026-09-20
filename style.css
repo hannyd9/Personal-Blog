@@ -221,7 +221,7 @@ nav {
     position: relative;
 }
 
-.intest-item[open] {
+.interest-item[open] {
     grid-column: 1 / -1;
 }
 
