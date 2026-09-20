@@ -131,7 +131,7 @@ nav {
     transition: 0.3s;
 }
 
-.star-button:hover {
+.start-button:hover {
     background: white;
     color: #0b0b0b;
 }
@@ -393,4 +393,37 @@ footer {
     color: #666;
 
     font-size: 12px;
+}
+
+html { scroll-padding-top: 70px; }
+
+.luces { display: block; 
+    width: 260px; 
+    margin-bottom: 30px;
+}
+
+.wheel {
+    position: absolute;
+    right: -8%;
+    top: 50%;
+    width: min(48wv, 560px);
+    transform: translateY(-50%);
+    opacity: 0.35;
+}
+
+.checkered {
+    height: 32px;
+    background: url(img/cuadros.png) repeat-x;
+}
+
+.bandera { height: 70px; }
+
+@media (max-width: 800px) {
+    .projects, .interests {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links { gap: 14px; }
+    .section h2 { font-size: 40px; }
+    .wheel { width: 90vw; opacity: 0.15; }
 }
