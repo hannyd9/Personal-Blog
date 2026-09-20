@@ -387,6 +387,7 @@ footer {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     border-top: 1px solid #333;
 
@@ -398,7 +399,7 @@ footer {
 html { scroll-padding-top: 70px; }
 
 .luces { display: block; 
-    width: 260px; 
+    width: 300px; 
     margin-bottom: 30px;
 }
 
@@ -406,7 +407,7 @@ html { scroll-padding-top: 70px; }
     position: absolute;
     right: -8%;
     top: 50%;
-    width: min(48wv, 560px);
+    width: min(48vw, 560px);
     transform: translateY(-50%);
     opacity: 0.35;
 }
@@ -426,4 +427,5 @@ html { scroll-padding-top: 70px; }
     .nav-links { gap: 14px; }
     .section h2 { font-size: 40px; }
     .wheel { width: 90vw; opacity: 0.15; }
+    .interest-info { grid-template-columns: 1fr; }
 }
