@@ -429,3 +429,29 @@ html { scroll-padding-top: 70px; }
     .wheel { width: 90vw; opacity: 0.15; }
     .interest-info { grid-template-columns: 1fr; }
 }
+
+
+/* =========================
+   GARAGE RADIO
+========================= */
+
+.tracks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.track img {
+    width: 90px;
+    margin-bottom: 15px;
+}
+
+.track-artist {
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+    .tracks { grid-template-columns: repeat(2, 1fr); }
+}
