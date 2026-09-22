@@ -436,22 +436,40 @@ html { scroll-padding-top: 70px; }
 ========================= */
 
 .tracks {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.track {
+    display: flex;
+    align-items: center;
     gap: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .track img {
     width: 90px;
-    margin-bottom: 15px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.track-song {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5f5f5;
 }
 
 .track-artist {
+    font-family: Arial, Helvetica, sans-serif;
     color: #888;
-    font-size: 13px;
+    font-size: 14px;
+    margin-top: 4px;
 }
 
-@media (max-width: 800px) {
-    .tracks { grid-template-columns: repeat(2, 1fr); }
+.tracks { 
+    grid-template-columns: repeat(2, 1fr); 
 }
