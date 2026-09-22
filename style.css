@@ -468,7 +468,3 @@ html { scroll-padding-top: 70px; }
     font-size: 14px;
     margin-top: 4px;
 }
-
-.tracks { 
-    grid-template-columns: repeat(2, 1fr); 
-}
