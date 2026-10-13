@@ -13,6 +13,7 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
     background: #0b0b0b;
     color: #f5f5f5;
 }
@@ -71,7 +72,7 @@ nav {
    HERO
 ========================= */
 
-.hero {
+.up {
     min-height: 100vh;
 
     position: relative;
@@ -80,7 +81,7 @@ nav {
     display: flex;
     align-items: center;
 
-    padding: 120px 8%;
+    padding: 140px 8% 80px;
 
     background:
         linear-gradient(
@@ -90,21 +91,21 @@ nav {
     );
 }
 
-.hero-content {
+.up-content {
     max-width: 900px;
     position: relative;
     z-index: 1;
 }
 
-.eyebrow {
+.overline {
     color: #e10600;
 
     font-size: 14px;
     letter-spacing: 4px;
 }
 
-.hero h1 {
-    font-size: clamp(60px, 10vw, 150px);
+.up h1 {
+    font-size: clamp(48px, 7vw, 100px);
     line-height: 0.85;
     margin: 25px 0;
     letter-spacing: -5px;
@@ -356,6 +357,7 @@ to {
 .blog-post {
     max-width: 700px;
     padding: 30px;
+    margin-bottom: 20px;
     border-left: 3px solid #e10600;
     background: #111;
 }
@@ -398,22 +400,23 @@ footer {
 html { scroll-padding-top: 70px; }
 
 .luces { display: block; 
-    width: 300px; 
+    width: 200px; 
     margin-bottom: 30px;
 }
 
 .wheel {
     position: absolute;
-    right: -8%;
-    top: 50%;
-    width: min(48vw, 560px);
+    right: -10%;
+    top: calc(50% + 35px);
+    width: min(48vw, 600px);
     transform: translateY(-50%);
     opacity: 0.35;
 }
 
 .checkered {
     height: 32px;
-    background: url(img/cuadros.png) repeat-x;
+    background: url(img/cuadros.jpeg) repeat-x;
+    background-size: 32px 32px;
 }
 
 .bandera { height: 70px; }
