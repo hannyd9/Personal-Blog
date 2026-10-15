@@ -2,7 +2,7 @@
 A personal website with a Formula 1 theme: about me, my projects, the things
 I love, a small blog and the songs playing in my garage.
 
-![](screenshot.png)
+![](img/screenshot.png)
 
 **Visit the site** [Open Hanny's Garage](https://hannyd9.github.io/Personal-Blog/)
 
